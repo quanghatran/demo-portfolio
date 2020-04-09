@@ -154,6 +154,10 @@ body {
   margin-top: 30px;
 }
 
+.pageBg .first-page .first-right .first-contact {
+  margin-top: 40px;
+}
+
 .pageBg .first-page .first-right .first-contact li {
   list-style: none;
   line-height: 30px;
@@ -227,7 +231,6 @@ body {
 
 .front .wrapper .what-i-do p {
   float: left;
-  margin-top: 20px;
   text-align: left;
   margin-left: 40px;
   font-weight: lighter;
@@ -278,13 +281,11 @@ body {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   background: #fff;
-  border-right: 1px solid #003445;
 }
 
 .back .wrapper {
   width: 90%;
   color: #003445;
-  max-height: 560px;
 }
 
 .back .wrapper .experience {
@@ -342,6 +343,34 @@ body {
   -o-animation: xoayanhlientuc1 2s linear infinite;
 }
 
+.back .wrapper .part-time-job {
+  margin: 0 auto;
+  margin: 0 auto;
+}
+
+.back .wrapper .part-time-job h3 {
+  font-size: 25px;
+  margin-top: -15px;
+}
+
+.back .wrapper .part-time-job .part-time {
+  text-align: left;
+  margin-left: 45px;
+  margin-bottom: 30px;
+}
+
+.back .wrapper .part-time-job .part-time .title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.back .wrapper .part-time-job .part-time p {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: -10px;
+  font-weight: lighter;
+}
+
 .back .project {
   width: 100%;
   height: 550px;
@@ -375,6 +404,8 @@ body {
   background: #fff;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+  border-left: 1px solid #003445;
+  margin-left: -1px;
   color: #003445;
 }
 
@@ -404,7 +435,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: red;
   width: 90%;
   margin: 0 auto;
   max-height: 250px;
@@ -413,18 +443,228 @@ body {
 .fourth-page .project .project-top .project-son-tung {
   position: relative;
   width: 50%;
-  background: url(../img/teaser.mp4);
 }
 
 .fourth-page .project .project-top .project-son-tung video {
-  background: #003445;
-  width: 100%;
-  height: 100%;
+  width: 95%;
 }
 
 .fourth-page .project .project-top .project-son-tung .project-title {
   position: absolute;
+  width: 95%;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  color: #fff;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  margin-left: 5px;
+}
+
+.fourth-page .project .project-top .project-son-tung .project-title p {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.fourth-page .project .project-top .project-son-tung .project-title .link {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.fourth-page .project .project-top .project-son-tung .project-title .link p {
+  border: 5px 10px;
+  background: #000;
+}
+
+.fourth-page .project .project-top .project-son-tung .project-title .link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fourth-page .project .project-top .project-son-tung:hover video {
+  opacity: 0.8;
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+.fourth-page .project .project-top .project-son-tung:hover .project-title {
   top: 0;
+  opacity: 1;
+}
+
+.fourth-page .project .project-top-right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fourth-page .project .project-top-right .project-bedDo, .fourth-page .project .project-top-right .project-html-css-js {
+  background-image: url(../img/G13-Bedroom-Furniture-1920px-x-850px-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 47%;
+}
+
+.fourth-page .project .project-top-right .project-bedDo .project-title, .fourth-page .project .project-top-right .project-html-css-js .project-title {
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #fff;
+  font-size: 15px;
+}
+
+.fourth-page .project .project-top-right .project-bedDo .project-title a, .fourth-page .project .project-top-right .project-html-css-js .project-title a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.fourth-page .project .project-top-right .project-html-css-js {
+  background-image: url(../img/cut.jpg);
+  margin-top: 6px;
+}
+
+.fourth-page .project .project-top-right .project-bedDo:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 52, 69, 0.4)), to(rgba(24, 41, 40, 0.4))), url(../img/G13-Bedroom-Furniture-1920px-x-850px-2.jpg);
+  background-image: linear-gradient(to right, rgba(0, 52, 69, 0.4), rgba(24, 41, 40, 0.4)), url(../img/G13-Bedroom-Furniture-1920px-x-850px-2.jpg);
+}
+
+.fourth-page .project .project-top-right .project-bedDo:hover .project-title {
+  opacity: 0.9;
+}
+
+.fourth-page .project .project-top-right .project-html-css-js:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 52, 69, 0.4)), to(rgba(24, 41, 40, 0.4))), url(../img/cut.jpg);
+  background-image: linear-gradient(to right, rgba(0, 52, 69, 0.4), rgba(24, 41, 40, 0.4)), url(../img/cut.jpg);
+}
+
+.fourth-page .project .project-top-right .project-html-css-js:hover .project-title {
+  opacity: 0.9;
+}
+
+.fourth-page .languages-and-contact {
+  width: 90%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.fourth-page .languages-and-contact .languages {
+  width: 50%;
+}
+
+.fourth-page .languages-and-contact .languages h3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  padding-left: 10px;
+  float: left;
+  margin-left: 40px;
+  font-size: 25px;
+  margin-top: 45px;
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.fourth-page .languages-and-contact .languages .item {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.fourth-page .languages-and-contact .languages .item progress {
+  border: 1px solid #003445;
+}
+
+.fourth-page .languages-and-contact .form {
+  width: 50%;
+}
+
+.fourth-page .languages-and-contact .form h3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  padding-left: 10px;
+  float: left;
+  margin-left: 40px;
+  font-size: 25px;
+  margin-top: 45px;
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.fourth-page .languages-and-contact .form .form-left {
+  width: 50%;
+}
+
+.fourth-page .languages-and-contact .form .form-right {
+  width: 100%;
+}
+
+.fourth-page .languages-and-contact .form .form-right .input-field {
+  margin: 0 auto;
+  margin-left: 17px;
+  margin-top: 10px;
+}
+
+.fourth-page .languages-and-contact .form .form-right .input-field input {
+  height: 25px;
+  width: 62%;
+  margin-bottom: 7px;
+  float: left;
+  color: #003445;
+  border: 1px solid #003445;
+}
+
+.fourth-page .languages-and-contact .form .form-right .input-field textarea {
+  display: block;
+  width: 61%;
+  resize: none;
+  color: #003445;
+  border: 1px solid #003445;
+}
+
+.fourth-page .languages-and-contact .form .form-right a {
+  text-decoration: none;
+  padding: 8px 20px;
+  margin: 0 auto;
+  float: left;
+  background: #0fb9b1;
+  border: 1px solid #076e69;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.fourth-page .languages-and-contact .form .form-right a:hover {
+  background: #076e69;
+}
+
+.fourth-page .footer {
+  position: absolute;
+  width: 120%;
+  margin: 0;
+  padding: 0;
+  bottom: 0px;
+  background: #0fb9b1;
+}
+
+.fourth-page .footer p {
+  color: #fff;
+  font-size: 15px;
 }
 
 .pageFoldRight {

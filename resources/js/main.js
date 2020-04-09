@@ -10,12 +10,12 @@ $(".page").click(
 	function() {
 		if (pageLocation[this.id] === undefined || pageLocation[this.id] == "right") {
 			zi = ($(".left").length) + 1;
-			TweenMax.to($(this), 1, {force3D: true, rotationY: -180, transformOrigin: "-1px top", className: '+=left', z: zi, zIndex: zi});
+			TweenMax.to($(this), 1.2, {force3D: true, rotationY: -180, transformOrigin: "-1px top", className: '+=left', z: zi, zIndex: zi});
 			TweenLite.set($(this), {className: '-=right'});
 			pageLocation[this.id] = "left";
 		} else {
 			zi = ($(".right").length) + 1;
-			TweenMax.to($(this), 1, {force3D: true, rotationY: 0, transformOrigin: "left top", className: '+=right', z: zi, zIndex: zi
+			TweenMax.to($(this), 1.2, {force3D: true, rotationY: 0, transformOrigin: "left top", className: '+=right', z: zi, zIndex: zi
 			});
 			TweenLite.set($(this), {className: '-=left'});
 			pageLocation[this.id] = "right";
